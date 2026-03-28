@@ -28,6 +28,9 @@ if [ -n "$OSC_HOSTNAME" ]; then
   export UNLEASH_URL="https://${OSC_HOSTNAME}"
 fi
 
+# Default to no SSL for database (OSC managed DBs don't require SSL)
+export DATABASE_SSL="${DATABASE_SSL:-false}"
+
 # Handle PORT -> HTTP_PORT mapping
 export HTTP_PORT="${PORT:-8080}"
 
