@@ -15,3 +15,4 @@ frontend/node_modules
 !frontend/.yarn/**
 node_modules
 !docker/index.js
+!osc-entrypoint.sh
